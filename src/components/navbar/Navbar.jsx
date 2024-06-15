@@ -38,7 +38,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav className={`flex w-full justify-between items-center p-4 ${(isScrolledToTop) ? 'relative' : 'fixed'} ${(isScrolledToTop || menuOpen)? 'bg-black' : 'bg-white'} z-20 text-white transition-colors ease-linear duration-3000`}>
+    <nav className={`flex w-full justify-between items-center p-4 fixed ${(isScrolledToTop || menuOpen)? 'bg-black' : 'bg-white'} z-20 text-white transition-colors ease-linear duration-3000`}>
         <div className='flex items-center mx-2'>
           <LogoSvg height={28}/>
         </div>
@@ -46,7 +46,7 @@ export default function Navbar() {
           
           <button
             onClick={handleModalOpen}
-            className='px-1 sm:px-8 py-1 bg-gray-200 text-black rounded transition ease-in-out delay-100 hover:bg-blue-300'
+            className='px-1 sm:px-8 py-1 bg-gray-200 text-black rounded transition-colors ease-in-out delay-100 hover:bg-blue-300'
           >
             <span className='hidden sm:block'>Say Hello</span>
             <MicSvg className='block sm:hidden'/>
@@ -61,11 +61,11 @@ export default function Navbar() {
         </div>
         {menuOpen && (
           <div className='fixed w-fit inset-0 z-10 rounded-b-3xl'>
-            <div className='fixed top-16 left-0 right-0 px-20 bg-black rounded-b-3xl overflow-hidden transition-transform ease-in-out transform translate-y-0'>
+            <div className='fixed top-16 py-5 left-0 right-0 px-20 bg-black rounded-b-3xl overflow-hidden transition-transform ease-in-out transform translate-y-0'>
               <ol className='flex flex-col'>
                 {MenuItem.map((item, id) => (
-                  <li key={id} className='p-4 pb-10 border-gray-300'>
-                    <a href={item.path} className='flex items-center gap-2 text-4xl font-bold text-gray-300 opacity-75'>
+                  <li key={id} className='pb-10 border-gray-300'>
+                    <a href={item.path} className='flex items-center text-4xl font-bold text-gray-300 opacity-75'>
                       <span>{item.name}</span>
                     </a>
                   </li>

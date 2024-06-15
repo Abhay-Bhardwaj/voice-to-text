@@ -24,7 +24,7 @@ export default function HeroCard() {
     <div
       className="bg-black flex flex-col p-5 md:p-12 tracking-tight"
     >
-      <div id="great-ideas-section" className="w-full md:w-2/4" style={{ opacity: opacity }} >
+      <div id="great-ideas-section" className="w-full pt-20 md:w-2/4" style={{ opacity: opacity }} >
         <h1 className="text-4xl text-white font-semibold mx-5 tracking-tight md:text-6xl">
           Great Ideas
         </h1>
