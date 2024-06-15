@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react'
 import Modal from '../Modal';
 import { LogoSvg } from '@/static/icons';
-import { MenuSvg } from '@/static/MenuSvg';
+import { MenuSvg, MenuCloseSvg } from '@/static/MenuSvg';
 import { MicSvg } from '@/static/MicSvg';
 import { MenuItem } from '@/static/MenuList';
 
@@ -56,7 +56,7 @@ export default function Navbar() {
             className='px-4 py-1 text-gray-400 flex flex-row gap-2'
           >
             <span className='hidden sm:block'>Menu</span>
-            <MenuSvg stroke={`${(isScrolledToTop || menuOpen) ? "white" : "#060606"}`}/>
+            {menuOpen ? <MenuCloseSvg/>: <MenuSvg stroke={`${(isScrolledToTop || menuOpen) ? "white" : "#060606"}`}/>}
           </button>
         </div>
         {menuOpen && (

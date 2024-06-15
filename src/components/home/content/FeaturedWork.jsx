@@ -24,7 +24,14 @@ export default function FeaturedWork() {
           {FeaturedWorkList.map((featuredWork, id) => (
             <div className='w-full md:w-1/2 my-4 items-start ' key={id}>
               <div className='w-fit rounded-xl overflow-hidden m-2 hover:scale-95 transition-transform duration-300 ease-out' dangerouslySetInnerHTML={{__html: featuredWork.img}}></div>
-              <img src={featuredWork.logo} alt={featuredWork.description} className='w-auto h-8 m-2'/>
+              <div className='relative w-auto h-8 m-2'>
+                <Image
+                  src={featuredWork.logo}
+                  alt={featuredWork.description}
+                  layout="fill"
+                  objectFit="contain"
+                />
+              </div>
               <p className='text-sm text-gray-500 tracking-tight m-2'>{featuredWork.description}</p>
             </div>
           ))}
