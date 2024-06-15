@@ -22,7 +22,7 @@ export default function Modal({ onClose }) {
   };
 
   if (!browserSupportsSpeechRecognition) {
-    return <span>Browser doesn't support speech recognition.</span>;
+    return "";
   }
 
   function closeTab() {

@@ -1,6 +1,6 @@
 export const FeaturedWorkList=[
             {
-                'img': '<img src="https://images.ctfassets.net/b62jgkkofmz2/6JGmTe13I2f9bNnXptsos0/c6c78158d3395686edbbeb2566abe7e5/zyppysCaseStudyCardBanner_2x.png?w=800&h=1083&q=100&fm=webp" alt="test" style="height:400px; " />',
+                'img': '<Image src="https://images.ctfassets.net/b62jgkkofmz2/6JGmTe13I2f9bNnXptsos0/c6c78158d3395686edbbeb2566abe7e5/zyppysCaseStudyCardBanner_2x.png?w=800&h=1083&q=100&fm=webp" alt="test" style="height:400px; " />',
                 'logo': 'https://images.ctfassets.net/b62jgkkofmz2/53QqxmKvGdR14P2C8z3q2X/805effeb1876ec61214663bd80684fde/logo-with-text.svg',
                 'description':"Building India's first ever rental car marketplace."
             },

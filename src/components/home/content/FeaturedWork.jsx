@@ -1,5 +1,7 @@
 import { FeaturedWorkList } from '@/static/FeaturedWork'
+import Image from 'next/image'
 import React from 'react'
+
 
 export default function FeaturedWork() {
   return (
