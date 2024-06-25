@@ -11,16 +11,16 @@ export default function BlogGrid() {
           <h4 className='text-2xl text-gray-800 font-semibold'>Pick Our Brains</h4>
           <h5 className='text-xl text-gray-500 font-semibold'>News, Blogs, Good Intentions etc.</h5>
         </div>
-        <div className='justify-center align-middle items-center cursor-pointer my-10'>
+        <div className='cursor-pointer my-10'>
           <Carousel>
             <CarouselContent>
               {BlogItem.map((item, id) => (
-                <CarouselItem key={id} className="basis-full sm:basis-1/2 lg:basis-1/3 my-2 md:my-10">
+                <CarouselItem key={id} className="basis-full flex flex-row align-middle justify-center items-center sm:basis-1/2 lg:basis-1/3 my-10">
                   <div key={id} className="bg-white group w-72 flex flex-col shadow-lg rounded-xl overflow-hidden">
-                    <div className="flex items-center h-72 z-0 overflow-hidden">
+                    <div className="flex items-center h-72  z-0 overflow-hidden">
                       <img src={item.img} alt={item.title} className="h-full w-auto object-cover group-hover:scale-125 transition-all duration-500 ease-out" />
                     </div>
-                    <div className="absolute bottom-0 w-72 bg-white p-4 rounded-xl overflow-hidden transition-transform duration-500 transform group-hover:translate-y-[-20%]">
+                    <div className="absolute bottom-0 w-72 bg-white p-4 rounded-xl overflow-hidden transition-transform duration-500 transform  group-hover:translate-y-[-20%]">
                       <h4 className="text-xl ">{item.title}</h4>
                       <p className="text-gray-500 group-hover:opacity-0 transition-all duration-500 ease-out" >{item.author}</p>
                     </div>
